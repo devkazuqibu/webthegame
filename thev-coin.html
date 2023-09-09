@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mua thẻ game online </title>
+    <link rel="icon" href="picture/dautrang.png" type="image/x-icon">
+    <link rel="stylesheet" href="thev-coin.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@5.5.3/dist/css/ionicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+    
+  
+
+</head>
+
+
+<header class="header">
+    
+    <!-- Thanh menu -->
+    <div class="menu">
+        <button class="menu-btn"> <img src="picture/logomenu.png"></button>
+        <ul class="menu-items">
+            <li><a href="index.html"><img src="picture/logotrang.png"></a></li>
+            <hr>
+            <li><a href="#"> <i class="fa-solid fa-house"></i>
+                Trang chủ</a></li>
+            <hr>
+            <li><a href="gioithieu.html"> <i class="fa-solid fa-circle-question"></i>
+                Giới Thiệu</a></li>
+            <hr>
+            <li><a href="dieukhoansudung.html"> <i class="fa-solid fa-lock"></i>
+                Điều khoản sử dụng</a></li>
+            <hr>
+            <li><a href="chinhsachdoitra.html"><i class="fa-solid fa-shield-halved"></i>
+                Chính sách bán hàng</a></li>
+            <hr>   
+            <li><a href="chinhsachbaomat.html"> <i class="fa-solid fa-shield-halved"></i>
+                Chính sách bảo mật</a></li>
+            <hr>
+           <div id="huongdanmuathe"> <button class="huongdanmua"> <i class="fa-solid fa-circle-question"></i>
+            Hướng dẫn mua thẻ</button> </div>
+            <li><a class="hidden-item" href="thev-coin.html">Thẻ V-coin</a></li>
+            <li><a class="hidden-item" href="the-garena.html">Thẻ Garena</a></li>
+            <li><a class="hidden-item" href="the-zing.html">Thẻ Zing</a></li>
+            <li><a class="hidden-item" href="the-appota.html">Thẻ Apoota</a></li>
+            <li><a class="hidden-item" href="the-gate.html">Thẻ Gate</a></li>
+            <li><a class="hidden-item" href="the-oncash.html">Thẻ On Cash</a></li>
+            <li><a class="hidden-item" href="the-bit.html">Thẻ Bit</a></li>
+
+        </ul>
+    </div>
+    <script>
+  const huongDanMuaBtn = document.querySelector(".huongdanmua");
+const hiddenItems = document.querySelectorAll(".hidden-item");
+const menuItems = document.querySelector('.menu-items');
+
+huongDanMuaBtn.addEventListener("click", function (event) {
+    event.stopPropagation(); // Ngăn chặn sự kiện click từ lan ra các phần tử khác
+    
+    hiddenItems.forEach(item => {
+        item.classList.toggle("show");
+    });
+});
+
+document.addEventListener('click', function(event) {
+    if (!menuItems.contains(event.target) && !huongDanMuaBtn.contains(event.target)) {
+        // Click bên ngoài menu và nút huongDanMuaBtn, đóng menuItems
+        hiddenItems.forEach(item => {
+            item.classList.remove("show");
+        });
+    }
+});
+
+
+    
+</script>
+
+
+    <!-- /Thanh menu -->
+   
+    <div>
+        <img class="logodangnhap" id="logodangnhap1" src="picture/logodangnhap1.png">
+        <a class="logoheader" href="index.html"><img src="picture/logoheader.png" ></a>
+      
+        <ul class="menu-phai">
+            <li style="font-size: 1.5rem;"><img src="picture/chuadangnhap.png">Chưa đăng nhập</li>
+            <hr>
+            <li><a href="dangnhap.html">  <i class="fa-solid fa-right-to-bracket"></i> Đăng nhập</a></li>
+            <hr>
+            <li><a  href="dangki.html"> <i style="margin-right: 3px;" class="fa-solid fa-user-plus"></i>Đăng kí</a></li>
+            <hr>
+        </ul>
+         </div>
+    <script>
+    
+        document.addEventListener('DOMContentLoaded', function() {
+    const huongDanMuaBtn = document.getElementById("logodangnhap1");
+    const menuPhai = document.querySelector(".menu-phai");
+
+    huongDanMuaBtn.addEventListener("click", function() {
+        menuPhai.classList.toggle("active");
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!menuPhai.contains(event.target) && !huongDanMuaBtn.contains(event.target)) {
+            menuPhai.classList.remove("active");
+        }
+    });
+});
+
+    </script>
+            
+       
+</header>
+<body>
+    <section>
+        <from>
+        <div class="container">
+               <h2><strong>Hướng dẫn mua thẻ V-Coin</strong></h2>
+                 
+                     
+               <div class="container">
+                      
+                    </div>
+                <hr>
+                <h2><strong>BQT NapTheNgay.vn</strong> xin gửi hướng dẫn người dùng mua thẻ:</h2>
+                        <h3><strong>Bước 1:</strong> Truy cập trang web.Truy cập trang web <a href="index.html">Tại đây</a></h3>
+
+                   
+                    <hr>
+                
+                    <div>
+                        <div class="container"></div>
+                        <h3><strong>Bước 2:</strong> Chọn nhà cung cấp</h3>
+                        <p style="text-align: center;">Đầu tiên, người dùng di chuyển đến nơi "Chọn nhà cung cấp".</p>
+                        <p>Tiếp đến, người dùng chọn nhà cung cấp:</p>
+                        <p><strong>thẻ V-Coin.</strong></p>
+                        <img id="anh1"   src="picture/v-coin1.png" alt="thev-coin">
+                   
+                    <hr>
+                
+                    <div>
+                        <h3><strong>Bước 3:</strong> Chọn mệnh giá và số lượng thẻ</h3>
+                        <p>Sau khi người dùng đã chọn nhà cung cấp, hãy chọn mệnh giá và số lượng thẻ mà mình muốn chọn.mệnh giá mà mình muốn mua</p>
+                   
+                        <p>Đầu tiên người dùng di chuyển tới nơi "Chọn mệnh giá</p>
+                        <p>Tiếp theo người dùng có thẻ tùy chọn mệnh giá và số lượng thẻ mà mình muốn mua</p>
+                        <img id="anh2"   src="picture/anh2.png" alt="anh2">
+                  
+                    <hr>
+                
+             
+                        <h3><strong>Bước 4: Nhập email nhận mã thẻ</strong></h3>
+                      <img id="anh3"   src="picture/anh3.png" alt="anh3">
+               
+                    <hr>
+                
+                
+                        <h3><strong>Bước 5:</strong> Kiểm tra thông tin giao dịch và thanh toán</h3>
+                        <p>Trước khi thanh toán, vui lòng kiểm tra lại chi tiết giao dịch cũng như nguồn tiền chọn thanh toán.</p>
+                   
+                    <hr>
+                
+           
+                        <h3><strong>Bước 6:</strong> Đăng nhập MoMo và xác nhận thanh toán</h3>
+                        <p>Chú ý: Tổng tiền cuối cùng thanh toán là số tiền của tổng số lượng thẻ đã được trừ đi số tiền giảm giá.</p>
+                
+                    <hr>
+                
+              
+                        <p>Mọi thắc mắc của quý khách hàng xin hãy gửi về cho chúng tôi qua:</p>
+                        <p><strong>Công ty cổ phần FUNTEK Việt Nam</strong></p>
+                        <p>Địa chỉ: Số 31 phố Chùa Láng, Phường Láng Thượng, Quận Đống Đa, Thành phố Hà Nội, Việt Nam.</p>
+                        <p>Email: <a href="mailto:hotro@napthengay.vn">hotro@napthengay.vn</a></p>
+                        <p>Hotline: <a href="#"> 0776 395 737</a></p>
+                    </div>
+                </div>
+            </from>
+                </section>
+                </body>
+        
+          
+            
+    
+
+
+  
+
+<footer style="background-color:#EFEFEF;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <a class="logofooter" href="index.html"><img src="picture/logofooter.png"  ></a>
+                <h5> <strong>CÔNG TY CỔ PHẦN FUNTEK VIỆT NAM</strong></h5>
+                <p>Giấy chứng nhận đăng ký kinh doanh số: 0109054589 do Sở kế hoạch đầu tư Thành phố Hà Nội cấp ngày 06/01/2020</p>
+                <p>Địa chỉ: Số 31 phố Chùa Láng, Phường Láng Thượng, Quận Đống Đa, Thành phố Hà Nội, Việt Nam</p>
+                <p>Hotline: <a style="text-decoration: none;color: #1976d2;cursor: pointer;" href="tel:0776 395 737">0776 395 737</a></p>
+                <p>Email:   <a style="color: #1976d2;text-decoration: none;" href="mailto:hotro@napthengay.vn">hotro@napthengay.vn</a></p>
+            </div>
+            
+            <div class="col-md-4 col-12">
+                <ul id="ulli">
+                    <hr>
+                    <li><a  href="https://napthengay.vn/bai-viet/chinh-sach-bao-hanh">Chính sách bảo hành</a></li>
+                    <hr>
+                    <li><a href="chinhsachbaomat.html">Chính sách bảo mật</a></li>
+                    <hr>
+                    <li><a href="https://napthengay.vn/bai-viet/chinh-sach-bao-hanh">Chính sách giao hàng</a></li>
+                    <hr>
+                    <li><a href="chinhsachdoitra.html">Chính sách đổi trả và hoàn tiền</a></li>
+                    <hr>
+                    <li><a href="dieukhoansudung.html">Chính sách hoạt động</a></li>
+                    <hr>
+                    <li><a href="https://napthengay.vn/bai-viet/chinh-sach-kiem-hang">Chính sách kiểm hàng</a></li>
+                    <hr>
+                    <li><a href="https://napthengay.vn/bai-viet/chinh-sach-van-chuyen">Chính sách vận chuyển</a></li>
+                    <hr>
+                    <li><a href="https://napthengay.vn/bai-viet/quy-dinh-thanh-toan">Quy định và hình thức thanh toán</a></li>
+                    <hr>
+                    <li><a href="gioithieu.html">Thông tin sản phẩm</a></li>
+                    <hr>
+                    <li><a href="https://napthengay.vn/hoi-dap">Những câu hỏi thường gặp</a></li>
+                    <hr>
+                </ul>
+                
+                </ul>
+            </div>
+        </div>
+        <a class="col-md-4 col-12" href="http://online.gov.vn/Home/WebDetails/91507?AspxAutoDetectCookieSupport=1">
+            <img style="height: 70px;" src="picture/bocongthuong.png" alt="Bộ Công Thương">
+        </a>
+    </div>
+  
+
+   
+</footer>
+
+
+</html>
+

@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*
+/* CSS cho thanh menu */
+.menu {
+    
+    display: inline-block;
+    float: left;
+    
+
+margin-top: 20px;
+overflow: auto;
+}
+header ul li{
+    color: #1976d2;
+}
+.menu-btn {
+    background-color: #001A4B;
+    color: white;
+
+    border: none;
+    cursor: pointer;
+}
+
+.menu-items {
+   
+    width: 19%;
+    border-top-left-radius: 9px;
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 0px 0;
+    left: 0;
+}
+
+.menu-items li {
+    padding: 10px;
+    text-align: left;
+   
+    display: flex;
+
+}
+
+.menu-items li a {
+    color:  #1976d2;
+    text-decoration: none;
+}
+
+.menu-items li a:hover {
+    background-color: #FFFFFF;
+}
+
+/* Hiển thị menu-items khi hover vào menu-btn */
+.menu:hover .menu-items {
+    display: block;
+}
+
+.huongdanmua {
+   
+  background:#FFFFFF ;
+    color:  #1976d2;
+    padding: 0 ;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    
+    
+}
+.huongdanmua:hover {
+    background-color: #E3EEF9;
+}
+    .menu-items hr {
+        margin-top: 7px;
+        margin-bottom: 7px;
+
+      
+
+}
+.menu-items {
+    margin-top: -60px;
+    height: 1000px;
+}
+/* CSS cho các phần ẩn */
+.hidden-item {
+    display: none;
+    text-align: center;
+    display: none;
+}
+.hienthi{
+     display: block;
+
+}
+/* css trong phan dang nhap ben phai */
+.logodangnhap{
+    float: right;
+    padding: 0 0 0 0;
+    background-color: #001A4B;
+    border-radius: none;
+    padding-top: 7px;
+    border: none;
+   
+}
+.menu-phai {
+    display: none;
+  }
+  
+  .menu-phai.active {
+    display: block;
+  }
+
+  /* Trang trí nút đăng nhập */
+/* Trang trí menu phải */
+.menu-phai {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    float: right; /* Đưa menu lên bên phải */
+    right: 0; /* Đặt vị trí từ bên phải */
+    margin-top: -75px;
+    height: 1000px;
+    width: 18%;
+}
+
+.menu-phai li {
+    padding: 10px;
+}
+
+.menu-phai hr {
+    margin: 8px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Hiển thị menu phải */
+.menu-phai.active {
+    display: block;
+}
+
+/* Trang trí nút hướng dẫn mua thẻ */
+.huongdanmua {
+    background-color:  #fff;
+    color: #1976d2;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Trang trí nút đăng nhập */
+.logodangnhap {
+    float: right;
+    padding: 0;
+    background-color: #001A4B;
+    border-radius: none;
+    padding-top: 7px;
+    border: none;
+}
+
+  /* Hiển thị danh sách */
+  .menu-phai.active {
+    display: block;
+  }
+  /* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+    /* Hiển thị nút đăng nhập bên phải khi màn hình nhỏ */
+    .logodangnhap {
+        float: right;
+    }
+
+    /* Điều chỉnh bố cục của menu-phai khi màn hình nhỏ */
+    .menu-phai {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        width: 60%;
+        text-align: center;
+        right: 0;
+        margin-top: -75px;
+        
+    }
+
+    /* Hiển thị menu-phai khi nút được nhấn */
+    .menu-phai.active {
+        display: block;
+    }
+
+    /* Điều chỉnh phần tử bên trong menu-phai khi màn hình nhỏ */
+    .menu-phai li {
+        display: block;
+        padding: 5px 0;
+        text-align: left;
+        
+    }
+.img{
+    width: 5%;
+}
+    .menu-phai hr {
+        display: none;
+    }
+}
+
+
+/* CSS cho phần container chứa đoạn văn */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* CSS cho các tiêu đề */
+h1{
+    font-size: 1.5rem;
+}
+h1, h2, h3, p {
+    color: #000000DE;
+    text-align: left;
+}
+
+.h2 {
+    height: 50px;
+}
+
+/* CSS cho đoạn văn bên trong container */
+.container p {
+    margin-bottom: 20px;
+}
+
+/* CSS cho các chữ in đậm */
+.bold-text {
+    font-weight: bold;
+}
+
+
+
+/* CSS cho các liên kết */
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    color: #000000DE;
+}
+
+ul li a:hover {
+    color:  #000000DE;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+    /* Add your responsive styles here */
+    /* For example, adjust font sizes or change the layout */
+    .menu-items{
+        width: 60%;
+       
+    }
+    
+    .container {
+        padding: 0 10px;
+
+    }
+}
+
+/* CSS phần header */
+.header {
+    width: 100%;
+    height:auto;
+    background-color: #001A4B;
+    
+}
+
+/* CSS phần footer */
+.footer {
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+/* CSS cho tag h1 */
+.h1-full-width {
+    width: 100%;
+}
+hr {
+    margin: 5px 0;
+}
+
+.logofooter{
+margin-left: -25px;
+}
+.footer ul li{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000000DE;
+}
+
+
+/* css body */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+  }
+  section img{
+    margin-left: 100px;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    width: 100%;
+ background-color:#FFFFFF;
+    background-position: center;
+    background-size: contain;
+    
+  }
+  .form-box {
+    position: relative;
+    width: 600px;
+    height: 500px;
+    background-color:#fff;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9); /* Bóng đen với độ mờ là 0.5 */;
+    margin: 0 auto; /* Để căn giữa theo chiều ngang */
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của màn hình */
+    height: auto; /* Cho phép ảnh tự động điều chỉnh chiều cao */
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #757575;
+    text-align: center;
+  }
+  
+  .inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 500px;
+  }
+  
+  .inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #757575;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  input:focus ~ label,
+  input:valid ~ label,
+  input:not(:placeholder-shown) ~ label {
+    top: -5px;
+    font-size: 0.8em;
+  }
+  
+  .inputbox input {
+    width: 90%;
+    height: 50px;
+
+    border: none;
+    
+    font-size: 1em;
+    padding: 0 40px 0 10px;
+    color: #757575;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #757575;
+    font-size: 1.2em;
+    top: 20px;
+  }
+  .inputbox i{
+    position: absolute;
+    right: 8px;
+    color: #757575;
+    font-size: 1.2em;
+    top: 20px;
+  }
+  
+  .forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color:#757575;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .forget label input {
+    margin-right: 3px;
+  }
+  
+  .forget label a {
+    color:#1976d2;
+    text-decoration: none;
+  }
+  
+  .forget label a:hover {
+    text-decoration: underline;
+  }
+  .p p{
+    color: red;
+    text-align: center;
+    font-size: 1rem;
+  }
+  button {
+    width: 94%;
+    height: 40px;
+    border-radius: 40px;
+    background:#1976d2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+
+  }
+  
+  .register {
+    font-size: .9em;
+    color: #1976d2;
+    text-align: center;
+    margin: 25px 0 10px;
+  }
+  
+  .register p a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: 600;
+  }
+  
+  .register p a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* ... (các quy tắc CSS đã được định nghĩa trước đó) ... */
+
+/* CSS cho khung nhập khi tập trung */
+.inputbox input:focus {
+    border-bottom: 2px solid #1976d2;
+}
+
+/* CSS cho biểu tượng khi khung nhập được tập trung */
+.inputbox input:focus ~ ion-icon {
+    color: #1976d2;
+}
+
+/* ... (các quy tắc CSS còn lại) ... */
+/* ... (các quy tắc CSS đã được định nghĩa trước đó) ... */
+
+/* CSS cho nhãn khi khung nhập tập trung */
+.inputbox input:focus ~ label {
+    color: #1976d2;
+}
+.inputbox input:focus ~ input text {
+    color: #1976d2;
+}
+
+
+/* ... (các quy tắc CSS còn lại) ... */
+

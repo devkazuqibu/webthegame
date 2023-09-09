@@ -1,0 +1,873 @@
+/* CSS cho thanh menu */
+
+.menu {
+  display: inline-block;
+  float: left;
+
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.menu-btn {
+  background-color: #001a4b;
+  color: white;
+
+  border: none;
+  cursor: pointer;
+}
+
+.menu-items {
+  width: 19%;
+  border-top-left-radius: 9px;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0px 0;
+  left: 0;
+}
+
+.menu-items li {
+  padding: 10px;
+  text-align: left;
+
+  display: flex;
+}
+
+.menu-items li a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.menu-items li a:hover {
+  background-color: #ffffff;
+}
+
+/* Hiển thị menu-items khi hover vào menu-btn */
+.menu:hover .menu-items {
+  display: block;
+}
+
+.huongdanmua {
+  background: #ffffff;
+  color: #1976d2;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  text-align: center;
+}
+.huongdanmua:hover {
+  background-color: #e3eef9;
+}
+.menu-items hr {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.menu-items {
+  margin-top: -60px;
+  height: 100%;
+}
+/* CSS cho các phần ẩn */
+.hidden-item {
+  display: none;
+  text-align: center;
+  display: none;
+}
+.hienthi {
+  display: block;
+}
+/* css trong phan dang nhap ben phai */
+.logodangnhap {
+  float: right;
+  padding: 0 0 0 0;
+  background-color: #001a4b;
+  border-radius: none;
+  padding-top: 7px;
+  border: none;
+}
+.menu-phai {
+  display: none;
+}
+
+.menu-phai.active {
+  display: block;
+}
+
+/* Trang trí nút đăng nhập */
+/* Trang trí menu phải */
+.menu-phai {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  float: right; /* Đưa menu lên bên phải */
+  right: 0; /* Đặt vị trí từ bên phải */
+  margin-top: -75px;
+  height: 1000px;
+  width: 18%;
+}
+
+.menu-phai li {
+  padding: 10px;
+}
+
+.menu-phai hr {
+  margin: 8px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* Hiển thị menu phải */
+.menu-phai.active {
+  display: block;
+}
+
+/* Trang trí nút hướng dẫn mua thẻ */
+.huongdanmua {
+  background-color: #fff;
+  color: #1976d2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Trang trí nút đăng nhập */
+.logodangnhap {
+  float: right;
+  padding: 0;
+  background-color: #001a4b;
+  border-radius: none;
+  padding-top: 7px;
+  border: none;
+}
+
+/* Hiển thị danh sách */
+.menu-phai.active {
+  display: block;
+}
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  /* Hiển thị nút đăng nhập bên phải khi màn hình nhỏ */
+  .logodangnhap {
+    float: right;
+  }
+
+  /* Điều chỉnh bố cục của menu-phai khi màn hình nhỏ */
+  .menu-phai {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    right: 0;
+    margin-top: -75px;
+  }
+
+  /* Hiển thị menu-phai khi nút được nhấn */
+  .menu-phai.active {
+    display: block;
+  }
+
+  /* Điều chỉnh phần tử bên trong menu-phai khi màn hình nhỏ */
+  .menu-phai li {
+    display: block;
+    padding: 5px 0;
+    text-align: left;
+  }
+  .img {
+    width: 5%;
+  }
+  .menu-phai hr {
+    display: none;
+  }
+}
+
+/* CSS cho phần container chứa đoạn văn */
+
+/* CSS cho các tiêu đề */
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: #000000de;
+  text-align: left;
+}
+
+.h2 {
+  height: 50px;
+}
+
+/* CSS cho đoạn văn bên trong container */
+.container p {
+  margin-bottom: 20px;
+}
+
+/* CSS cho các chữ in đậm */
+.bold-text {
+  font-weight: bold;
+}
+
+/* CSS cho các liên kết */
+ul {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000000de;
+}
+
+ul li a:hover {
+  color: #000000de;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  /* Add your responsive styles here */
+  /* For example, adjust font sizes or change the layout */
+  .menu-items {
+    width: 60%;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* CSS phần header */
+.header {
+  width: 100%;
+  height: auto;
+  background-color: #001a4b;
+}
+
+/* CSS phần footer */
+.footer {
+  width: 100%;
+  float: left;
+  text-align: left;
+  background-color:#EFEFEF;
+  margin-top: 40px;
+}
+
+/* CSS cho tag h1 */
+.h1-full-width {
+  width: 100%;
+}
+hr {
+  margin: 5px 0;
+}
+
+.logofooter {
+  margin-left: -25px;
+}
+.footer ul li {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000000de;
+}
+
+body p ul li {
+  font-size: 18.6667px;
+}
+body p {
+  color: black;
+}
+section img {
+  width: 100%;
+}
+.popup {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  padding: 5px;
+
+  z-index: 1000;
+
+  height: 80px;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1.5px solid #f25922; /* Thêm viền màu cam */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* Thêm hiệu ứng bóng */
+  border-radius: 10px;
+  width: 90%; /* Thay đổi chiều rộng tương ứng với màn hình nhỏ hơn */
+  max-width: 650px; /* Giới hạn chiều rộng tối đa */
+  height: auto; /* Tự động điều chỉnh chiều cao dựa trên nội dung */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login-button {
+  margin: 10px;
+  padding: 5px 5px;
+  width: 40%;
+  border: 1.5px solid #1976d2;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng */
+  border-radius: 10px;
+  background-color: #fff;
+  color: #1976d2;
+  cursor: pointer;
+  height: 40px;
+}
+.register-button {
+  margin: 10px;
+  padding: 8px 10px;
+  width: 40%;
+  border: 1.5px solid #4caf50;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng */
+  border-radius: 10px;
+  background-color: #fff;
+  color: #4caf50;
+  cursor: pointer;
+  height: 40px;
+}
+.popup h4 {
+  color: #1976d2;
+  text-align: center;
+  font-size: 16.5px;
+  font-weight: 600;
+}
+.carousel-caption {
+  position: absolute;
+}
+/* Responsive cho phần .popup-content trên các màn hình nhỏ */
+@media screen and (max-width: 767px) {
+  .popup-content {
+    width: 90%; /* Thay đổi chiều rộng tương ứng với màn hình nhỏ hơn */
+    max-width: 80%; /* Giới hạn chiều rộng tối đa */
+    height: auto; /* Tự động điều chỉnh chiều cao dựa trên nội dung */
+    padding: 5px; /* Điều chỉnh khoảng cách nội dung bên trong */
+  }
+  h4 {
+    font-size: 12px;
+  }
+}
+
+.the {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  height: 80px;
+  width: 170px;
+
+
+  
+  border: 1px solid #d3d3d3;
+}
+.the.selected {
+  border: 2px solid #f25922;
+}
+@media screen and (max-width: 767px) {
+  .the{
+    flex-wrap: wrap;
+
+  }
+}
+.gia {
+  background-color: white;
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  width: 160px;
+  height: auto;
+}
+.item-price1.selected {
+  border: 2px solid #f25922;
+}
+.thethanhtoan.selected {
+  border: 2px solid #f25922;
+}
+
+.decrement {
+  border-radius: 50%;
+  font-size: 25px;
+  border: none;
+  width: 50px; /* Đặt chiều rộng bằng chiều cao để tạo hình dạng tròn */
+  height: 50px; /* Đặt chiều cao */
+  border-radius: 50%; /* Đặt border-radius thành 50% */
+  cursor: pointer;
+  background-color: #aaaaaa;
+}
+.increment {
+  border-radius: 50%;
+  font-size: 25px;
+  border: none;
+  width: 50px; /* Đặt chiều rộng bằng chiều cao để tạo hình dạng tròn */
+  height: 50px; /* Đặt chiều cao */
+  border-radius: 50%; /* Đặt border-radius thành 50% */
+  cursor: pointer;
+  background-color: #aaaaaa;
+}
+.decrement.active {
+  background-color: #878787;
+}
+.count {
+  display: inline-block;
+  border: 2px solid #878787;
+  padding: 15px 15px; /* Tạo khoảng cách giữa nội dung và viền */
+  border-radius: 5px; /* Độ cong của viền, tạo hình vuông */
+  width: 50px;
+}
+
+.count-inner {
+  font-size: 20px;
+  height: auto;
+}
+article h4 {
+  background-color: #efefef;
+  padding: 10px 10px 10px 10px;
+}
+article h3 {
+  font-size: 19px;
+}
+article i {
+  color: #FF0A0A;
+
+  padding-top: 20px;
+}
+#emailInput {
+  margin-left: 30px;
+  border-radius: 7px;
+  border: 1.5px solid red;
+  padding-left: 20px;
+  width: 70%;
+  height: 60px;
+  transition: border-color 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng */
+}
+
+#emailInput.valid {
+  border: 1.5px solid #1e90ff; /* Xanh dương */
+}
+
+#emailInput.invalid {
+  border: 1.5px solid #ff0000; /* Đỏ */
+}
+
+.custom-hr {
+  border-top: 1.5px solid #ccc;
+  border-bottom: 1.5px solid #ccc;
+  width: 100%;
+}
+#hinhthucthanhtoan  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+}
+.thethanhtoan {
+  border: 2px solid #d3d3d3;
+  border-radius: 15px; /* Bo tròn viền */
+  margin: 5px; /* Khoảng cách giữa các nút */
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.4); /* Thêm box-shadow */
+
+  
+}
+
+.thanhtoan {
+  background-color: white;
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.thanhtoan.selected {
+  border: 2px solid #f25922;
+}
+
+.thanhtoan img {
+  max-width: 100%;
+  height: auto;
+}
+.buttonthanhtoan {
+  color: #fff;
+  background-color: #001a4b;
+  width: 80%;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 7px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); /* Thêm box-shadow */
+}
+article h2 {
+  background-color: #efefef;
+  padding: 10px 10px 10px 10px;
+}
+#tintuc {
+  display: flex;
+  justify-content: space-between; /* Cách điều 2 bên */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+#tintuc a {
+  flex: 1; /* Độ rộng linh hoạt cho các hình ảnh */
+  margin: 0 10px; /* Khoảng cách giữa các hình ảnh */
+}
+
+#tintuc img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước của container */
+}
+#tintuclink {
+  display: flex;
+  justify-content: space-around; /* Cách điều 2 bên */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  color: #1976d2;
+  padding: 10px; /* Khoảng cách nội dung và viền */
+}
+
+#tintuclink p {
+  flex: 1; /* Độ rộng linh hoạt cho các liên kết */
+  margin: 0 10px; /* Khoảng cách giữa các liên kết */
+
+  color: black;
+  transition: color 0.3s; /* Hiệu ứng chuyển đổi màu */
+}
+#tintuclink p:hover {
+  color: #1976d2; /* Màu chữ khi di chuột vào */
+}
+#tintuclink p {
+  margin: 0; /* Loại bỏ khoảng cách đầu đoạn văn bản */
+}
+@media (max-width: 767px) {
+  #tintuc {
+    flex-direction: column;
+    align-items: center;
+  }
+  #tintuc a {
+    margin: 0; /* Loại bỏ khoảng cách giữa các hình ảnh khi là một cột */
+  }
+  #tintuc img {
+    max-width: 100%;
+    margin-bottom: 10px; /* Khoảng cách giữa các hình ảnh khi là một cột */
+  }
+  #tintuclink {
+    display: block; /* Đảm bảo dòng #tintuclink hiển thị dưới mỗi hình ảnh */
+    text-align: center; /* Căn giữa theo chiều ngang */
+    padding: 10px 0; /* Khoảng cách nội dung và viền */
+  }
+  #tintuclink p {
+    margin: 10px 0; /* Khoảng cách giữa các liên kết khi là một cột */
+  }
+}
+
+/* //// */
+.provider-item.item-price {
+  display: block !important;
+  padding: 10px 10px 2px;
+  margin: 20px;
+}
+.provider-item {
+  display: block;
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 4px;
+  min-height: 60px !important;
+  max-width: 130px !important;
+  cursor: pointer;
+  position: relative;
+}
+.provider-item .price-info {
+  color: #0a0a0a !important;
+  display: block;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  margin: -12px;
+}
+.provider-item .price-discount {
+  display: flex;
+  border-top: 1px dotted #333;
+  padding-top: 4px;
+  margin: 0;
+}
+.provider-item .price-discount .discount-text {
+  float: left;
+  font-size: 10px;
+  color: #0a0a0a;
+  width: 49%;
+}
+.provider-item .price-discount .discount-value {
+  float: right;
+  font-size: 11px;
+  color: #002bff;
+  width: 49%;
+  text-align: right;
+  font-weight: 500;
+}
+.ppopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* CSS cho nút "Quay lại" và "Tiếp tục" trong popup */
+/* CSS cho nút "Thanh toán" */
+.buttonthanhtoan {
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+/* CSS cho lớp nền mờ */
+.background-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Mờ 60% */
+  z-index: 9999;
+}
+
+/* CSS cho biểu tượng */
+.fa-triangle-exclamation {
+  font-size: 70px;
+  margin-top: -10px;
+}
+
+/* CSS cho popup */
+.ppopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 10000;
+  height: 239px;
+}
+
+/* CSS cho nút "Quay lại" và "Tiếp tục" trong popup */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ppopup button {
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 30%;
+}
+
+/* CSS cho căn giữa ngang */
+.ppopup p {
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* CSS cho vùng khung popup */
+.ppopup-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS cho nút "Quay lại" và "Tiếp tục" trong popup */
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.ppopup button {
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 20%;
+  
+}
+
+/* CSS cho căn giữa ngang */
+.ppopup p {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+/* CSS cho nút "Quay lại" và "Tiếp tục" trong popup */
+#btnBack {
+  position: absolute;
+  left: 0;
+  background-color: #F5F5F5;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 20px;
+  width: 35%;
+  margin-left: 20px;
+  
+
+}
+
+#btnContinue {
+  position: absolute;
+  right: 0;
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 20px;
+  width: 35%;
+  margin-right: 20px;
+  
+  
+}
+
+/* CSS cho căn giữa ngang */
+.ppopup p {
+  margin-bottom: 15px;
+  font-size: 18px;
+ 
+}
+
+/* responsive cho pha ppopup */
+/* CSS cho màn hình điện thoại */
+/* CSS cho màn hình điện thoại */
+/* CSS cho màn hình điện thoại */
+@media (max-width: 767px) {
+  .fa-triangle-exclamation {
+    margin-top: -25px;
+    font-size:65px;
+    
+    
+  }
+  .ppopup {
+    width: 90%;
+    padding: 0;
+  }
+
+  .ppopup-content {
+    padding: 0;
+  }
+
+  .button-container {
+    display: flex;
+    
+    align-items: center; /* Canh giữa các nút theo chiều ngang */
+  }
+
+  .ppopup button {
+    width: 100%;
+   
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  
+
+  #hinhthucthanhtoan {
+    justify-content:space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+    
+    
+  }
+
+  .thethanhtoan {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  span .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+  }
+  }
+  .red-text {
+    color: #FF0A0A;
+
+  }
+  .black-text {
+    color: black;
+  }
+  #loaimathe, #menhgiathe, #soluongthe, #email, #phigiaodich, #giamgia, #tongtien {
+    font-size: 20px;
+    color: #FF0A0A;
+
+
+
+  }
+
+ 
